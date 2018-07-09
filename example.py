@@ -3,7 +3,7 @@ from libs.order import Order
 from libs.smsverification import SMSVerification
 
  # Configure your API key
-api_key = 'GR3SEAWKYH3ZFJGKQTWXY20TB3FCW74C'
+api_key = 'YOUR_API_KEY'
 
 
 """
@@ -75,8 +75,8 @@ print(Order.feedback(feedback_variables))
 """
 sms_verification_variables = {
 	'key': api_key,
-	'tel': '+15616288674',
-	'country_code': 'US',
+	'tel': '+60175063088',
+	'country_code': 'MY',
 	'mesg': 'Your OTP for the transaction is <otp>.',
 }
 print(SMSVerification.send_sms(sms_verification_variables))
@@ -86,8 +86,8 @@ print(SMSVerification.send_sms(sms_verification_variables))
 """
 verify_sms_variables = {
 	'key': api_key,
-	'tran_id': 'UNIQUE_TRANS_ID',
-	'otp': 'OTP_RECEIVED',
+	'tran_id': 'LcV6tHszNaiEAB6U7ZRy',
+	'otp': '971504',
 }
 print(SMSVerification.verify_sms(verify_sms_variables))
 
